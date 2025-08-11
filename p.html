@@ -1,0 +1,107 @@
+let name2 = 'JavaScript';        // Using single quotes
+let name3 = `Template Literal`;  // Using backticks (for template strings)
+
+let message = " Hello JavaScript ";
+
+console.log(message.length);          // 19
+console.log(message.trim());          // "Hello JavaScript"
+console.log(message.includes("Java"));// true
+console.log(message.toUpperCase());   // " HELLO JAVASCRIPT "
+console.log(message.slice(1, 6));     // "Hello" 
+
+
+<form> 
+    <input type="text" placeholder="Your Name" required>
+    <button type="submit">Submit</button>
+  </form>
+<!--  -->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Multicolor Text on Image</title>
+  <!-- <style>÷ -->
+    .image-container {
+      position: relative;
+      display: inline-block;
+    }
+
+    .text-overlay {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .red { color: red; }
+    .blue { color: blue; }
+    .green { color: green; }
+  </style>
+</head>
+<body>
+
+  <div class="image-container">
+    <img src="https://via.placeholder.com/500x300" alt="Sample" width="500">
+    <div class="text-overlay">
+      <span class="red">Hello</span>
+      <span class="blue">Beautiful</span>
+      <span class="green">World</span>
+    </div>
+  </div>
+
+</body>
+</html> 
+
+<!--  <canvas id="signature-pad" width="300" height="150" style="border:1px solid #000;"></canvas> -->
+<!-- <button onclick="clearPad()">Clear</button> -->
+
+<script src="https://cdn.jsdelivr.net/npm/signature_pad@4.0.0/dist/signature_pad.umd.min.js"></script>
+<script>
+  const canvas = document.getElementById("signature-pad");
+  const signaturePad = new SignaturePad(canvas);
+
+  function clearPad() {
+    signaturePad.clear();
+  }
+</script> 
+<!-- 
+
+<canvas id="myCanvas" width="300" height="150" style="border:1px solid #bd2020;"></canvas>
+
+<script>
+  const canvas = document.getElementById("myCanvas");
+  const ctx = canvas.getContext("2d");
+  ctx.fillStyle = "blue";
+  ctx.fillRect(20, 20, 100, 50);
+ </script> -->
+<!-- 
++-----------------------------+
+|          Margin             |
+|  +-----------------------+  |
+|  |       Border          |  |
+|  |  +-----------------+  |  |
+|  |  |   Padding       |  |  |
+|  |  |  +-----------+  |  |  |
+|  |  |  | Content   |  |  |  |
+|  |  |  +-----------+  |  |  |
+|  |  +-----------------+  |  |
+|  +-----------------------+  |
++-----------------------------+ --> 
+
+<!-- div {
+    width: 200px;
+    padding: 20px;
+    border: 5px solid black;
+    margin: 10px;
+    box-sizing: content-box; /* default */
+  } -->
+  
+  let name = "Alice";   // Declares a variable named 'name' with value "Alice"
+name = "Bob";         // Value can be changed
+
+{
+  let name = "Charlie";  // Different 'name' inside this block
+  console.log(name);     // Charlie
+}
+
+console.log(name);       // Bob (outer scope)
